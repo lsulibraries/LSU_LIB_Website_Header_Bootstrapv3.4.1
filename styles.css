@@ -4,9 +4,33 @@
   --black: #232323;
   --gray: #434343;
   --medium-gray: #999999;
-  --light-gray: #f2f2f2;
+  --light-medium-gray: #dbdbdb;
+  --light-gray: #e7e7e7;
+  --lighter-gray: #f2f2f2;
 
   font-size: 16px;
+}
+
+@media (min-width: 87.5rem) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1600px;
+  }
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 a {
@@ -29,7 +53,12 @@ header {
 }
 
 #logo {
+  transition: all 0.2s ease-in-out;
   fill: var(--medium-gray);
+}
+
+#logo:hover {
+  fill: var(--lsu-purple);
 }
 
 #ask-us {
@@ -54,6 +83,8 @@ header {
   top: 12px;
   left: 0;
   right: 0;
+  width: max-content;
+  margin: 0 auto;
 }
 
 @media (max-width: 1199px) {
@@ -72,28 +103,72 @@ header {
 
 #search-container {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 12px;
   -webkit-box-shadow: 0px 14px 45px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 14px 45px rgba(0, 0, 0, 0.25);
+  width: min-content;
+  overflow: hidden;
+}
+
+@media (max-width: 87.5rem) {
+  #search-container {
+    width: 600px;
+  }
 }
 
 #search-tabs-container {
-  background-color: var(--light-gray);
-  border-radius: inherit;
+  background-color: var(--lighter-gray);
+  height: 64px;
+}
+
+#search-tabs-container li.active a {
+  color: initial;
+  border: none;
+  border-top: 2px solid var(--lsu-gold) !important;
+}
+
+#search-tabs-container li:first-of-type.active a {
+  border-top-left-radius: 12px !important;
+}
+
+#search-tabs-container li:last-of-type.active a {
+  border-top-right-radius: 12px !important;
 }
 
 .search-tab {
-  padding: 20px !important;
+  display: flex !important;
+  padding: 0 32px !important;
   width: fit-content;
   margin: 0 !important;
   text-align: center;
-  height: 100%;
+  transition: all 0.15s ease-in-out;
+  border-radius: 0 !important;
 }
 
-.search-tab:hover {
-  background-color: transparent !important;
+.search-tab:hover,
+.search-tab:focus {
   border-color: transparent !important;
   color: initial;
+}
+
+.search-tab i {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: xx-large;
+  color: var(--light-gray);
+  transition: all 0.15s ease-in-out;
+}
+
+#search-tabs-container li.active i,
+.search-tab:hover i,
+.search-tab:focus i {
+  color: var(--light-medium-gray);
+}
+
+.tab-label {
+  z-index: 1;
 }
 
 .caret-custom {
@@ -107,6 +182,33 @@ header {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: var(--lsu-purple);
+  color: white;
+  padding: 6px 56px;
+  font-weight: 400;
+}
+
+#hours a {
+  color: var(--lsu-gold);
+}
+
+#hours th {
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#hours th,
+#hours td {
+  padding: 4px;
+}
+
+.dep7998 {
+  display: none;
+}
+
+.tab-pane-custom {
+  padding: 16px;
 }
 
 /* Text */
