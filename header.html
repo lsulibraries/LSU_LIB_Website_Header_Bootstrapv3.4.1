@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <header class="text-uppercase font-weight-bold">
+    <header class="text-uppercase font-weight-bold position-fixed w-100">
         <nav id="nav-container" class="navbar navbar-default mb-0">
             <div class="container d-flex justify-content-between align-items-center position-relative">
                 <div id="spacer" class="d-flex flex-grow-1 flex-shrink-1 flex-basis-0"></div>
@@ -367,7 +367,7 @@
                             </div>">
                                 <form action="https://guides.lib.lsu.edu/az.php" method="get"
                                     class="d-flex align-items-center">
-                                    <div class="w-100 d-flex input-container">
+                                    <div class="w-100 d-flex input-container align-items-center">
                                         <div class="w-100 flex-grow-1">
                                             <label for="q" class="form-text text-muted">Search terms</label>
                                             <input type="text" class="search-input form-control" name="q"
@@ -405,16 +405,20 @@
                                                 <option value="pound">#</option>
                                             </select>
                                         </div>
-                                        <div class="w-100 flex-grow-1">
-                                            <label for="t" class="form-text text-muted">Database links</label>
-                                            <select name="t" class="border-none">
-                                                <option value="11403">Frequently used databases</option>
-                                                <option value="">
-                                                    All Databases</option>
-                                                <option value="">Terms &
-                                                    Conditions
-                                                </option>
-                                            </select>
+                                        <div class="dropdown flex-grow-1 w-max">
+                                            <a href="#" class="dropdown-toggle d-block w-max" data-toggle="dropdown"
+                                                role="button" aria-haspopup="true" aria-expanded="false">Database links
+                                                <span class="caret caret-custom"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a target="_blank"
+                                                        href="https://guides.lib.lsu.edu/az.php?t=11403">Frequently used
+                                                        databases</a></li>
+                                                <li class="dropdown-item"><a target="_blank"
+                                                        href="https://guides.lib.lsu.edu/az.php">All Databases</a></li>
+                                                <li class="dropdown-item"><a target="_blank"
+                                                        href="https://lib.lsu.edu/services/copyright/terms">Terms &
+                                                        Conditions</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-search"><i
@@ -433,19 +437,25 @@
                             </div>">
                                 <form action="https://guides.lib.lsu.edu/az.php" method="get"
                                     class="d-flex align-items-center">
-                                    <div class="w-100 d-flex input-container">
+                                    <div class="w-100 d-flex input-container align-items-center">
                                         <div class="w-100 flex-grow-1">
                                             <label for="q" class="form-text text-muted">Search terms</label>
                                             <input type="text" class="search-input form-control" name="q"
                                                 placeholder="Search for journals and newspapers...">
                                         </div>
-                                        <div class="w-100 flex-grow-1">
-                                            <label class="form-text text-muted">Related links</label>
-                                            <select name="t" class="border-none">
-                                                <option value="11403">Browse publications</option>
-                                                <option value="">
-                                                    Terms & Conditions</option>
-                                            </select>
+                                        <div class="dropdown flex-grow-1 w-max">
+                                            <a href="#" class="dropdown-toggle d-block w-max" data-toggle="dropdown"
+                                                role="button" aria-haspopup="true" aria-expanded="false">Related links
+                                                <span class="caret caret-custom"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-item"><a target="_blank"
+                                                        href="https://publications.ebsco.com/?custId=s8491974&groupId=main&profileId=pfui">Browse
+                                                        publications</a></li>
+                                                <li class="dropdown-item"><a target="_blank"
+                                                        href="https:/lib.lsu.edu/services/copyright/terms">Terms
+                                                        &
+                                                        Conditions</a></li>
+                                            </ul>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-search"><i
@@ -474,6 +484,12 @@
                                             class="fas fa-search"></i></button>
                                 </form>
                             </div>
+                        </div>
+                        <div id="input-placeholder" class="d-flex align-items-center">
+                            <span class="flex-grow-1 text-align-center">Start your search...</span>
+                            <button type="submit"
+                                class="btn btn-primary btn-search d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </div>
@@ -647,6 +663,38 @@
             </ul>
     </aside>
 
+    <footer id="custom-footer">
+        <div class="container d-flex align-items-start">
+            <div class="flex-grow-1">
+                <a href="https://lib2.lsu.edu">
+                    <img id="footer-logo" alt="" src="https://lib2.lsu.edu/themes/custom/origami/images/logo_vert.png">
+                </a>
+            </div>
+            <div>
+                <p>LSU Libraries<br>Baton Rouge, LA 70803</p>
+                <p>TEL (225) 578-5652<br>FAX (225) 578-9432</p>
+                <a href="#">
+                    <p>Contact us</p>
+                </a>
+            </div>
+            <div>
+                <p>© 1996 - 2023 LSU LIBRARIES</p>
+                <p>
+                    <a
+                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=P61NLa5Q2UeDoJrisfRm-AXaBV0JVZ9NibGmPOaCylRUQ1ZPODM4UU1FV1ZZS0RXS1QyNjJaTkRJWS4u">
+                        PROVIDE WEBSITE FEEDBACK
+                    </a><br>
+                    <a href="http://www.lsu.edu/accessibility/index.php">
+                        ACCESSIBILITY STATEMENT
+                    </a><br>
+                    <a href="https://lib2.lsu.edu/accessibility">
+                        ACCESSIBILITY INFORMATION
+                    </a><br>
+                </p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Library hours -->
     <script
         src="https://lsu.libcal.com/api_hours_today.php?iid=1486&lid=241&format=js&systemTime=0&context=object"></script>
@@ -677,6 +725,19 @@
             $('#off-canvas').offcanvas({
                 // options
             });
+
+            $(window).on("scroll", function (e) {
+                if ($(window).scrollTop() <= 20) {
+                    $("header").removeClass("scrolled");
+                }
+                else {
+                    $("header").addClass("scrolled");
+                }
+            });
+
+            $("#input-placeholder").on("click", function (e) {
+                $("header").removeClass("scrolled");
+            })
         });
     </script>
 
