@@ -18,9 +18,6 @@
   padding: 90px;
   text-transform: uppercase;
   color: var(--light-gray);
-
-  /* For testing */
-  margin-top: 300px;
 }
 
 #footer-logo {
