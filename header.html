@@ -205,6 +205,12 @@
                                 </a>
                             </li>
                         </ul>
+                        <div id="scroll-btn-container" class="d-flex position-absolute justify-content-between">
+                            <div class="btn-scroll btn-scroll-left d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-chevron-left"></i></div>
+                            <div class="btn-scroll btn-scroll-right d-flex align-items-center justify-content-center"><i
+                                    class="fas fa-chevron-right"></i></div>
+                        </div>
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active tab-pane-custom" id="website-search-tab"
                                 data-toggle="tooltip" data-placement="bottom" title="<div class='tab-form-detail d-flex align-items-center'>
@@ -738,6 +744,30 @@
             $("#input-placeholder").on("click", function (e) {
                 $("header").removeClass("scrolled");
             })
+
+            let scrolled = 0
+            var maxScrollLeft = $("#search-tabs-container")[0].scrollWidth - $("#search-tabs-container")[0].clientWidth;
+
+            $(".btn-scroll-left").on("click", function () {
+                scrolled = scrolled - 168;
+                if (scrolled < 0) scrolled = 0;
+
+                $("#search-tabs-container").animate({
+                    scrollLeft: scrolled
+                }, 200);
+
+
+            });
+
+            $(".btn-scroll-right").on("click", function () {
+                scrolled = scrolled + 168;
+                if (scrolled > maxScrollLeft) scrolled = maxScrollLeft
+
+                $("#search-tabs-container").animate({
+                    scrollLeft: scrolled
+                }, 200);
+            });
+
         });
     </script>
 
