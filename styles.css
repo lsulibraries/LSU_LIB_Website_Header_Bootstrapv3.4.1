@@ -71,6 +71,7 @@ header {
   font-size: 0.75rem;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.0625rem;
+  z-index: 1
 }
 
 #spacer {
@@ -285,6 +286,10 @@ header {
   margin-top: 8px;
   pointer-events: all;
   cursor: pointer;
+}
+
+.scrolled .btn-scroll {
+  display: none;
 }
 
 .btn-scroll-left {
@@ -768,9 +773,200 @@ header {
   border: none;
 }
 
+
+/* Default overrides */
+
+#search-tabs-container .active i {
+    color: #f7f7f7 !important;
+}
+
+.main-content{
+    background: #f2f2f2;
+    overflow-x: hidden;
+}
+
+.s-la-box-content {
+    background: white;
+}
+
+.s-la-box-container {
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.05);
+    border: 0px;
+}
+
+.s-la-color-bars {
+    background: none;
+}
+
+.s-la-box-title {
+    padding: 20px;
+    border: 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.s-la-box-title h2 {
+    font-size: 14px;
+    margin: 0;
+    line-height: normal;
+    color: #333;
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+}
+
+.s-la-header {
+    padding: 20px 10px 10px 0;
+    background: black;
+    height: 240px;
+    margin-bottom: 20px;
+}
+
+#s-la-public-header::before{
+    content: '';
+    background: url(https://lib2.lsu.edu/sites/default/files/2023-05/access_s_0.jpg);
+    top: 0px;
+    height: 430px;
+    z-index: 0;
+    width: 100vw;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    filter: brightness(0.7) blur(4px);
+    background-position: center;
+}
+
+h1.s-la-public-header-title {
+    text-shadow: 4px 4px 24px black;
+    font-size: 60px;
+    font-family: Roboto, sans-serif;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+    padding-top: 40px;
+}
+
+.s-la-public-home.s-la-public-header-text{
+    text-align: left;
+}
+
+#s-la-page-title-bar, #s-la-bc, #ask-us, #s-la-public-footer{
+    display: none;
+}
+
+.s-la-content-iconitem-icon .fa {
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #b7b7b7;
+    margin-left: 10px;
+}
+
+div#s-la-page-column-0 {
+    position: relative;
+    top: -80px;
+    height: 60px;
+}
+
+div#s-la-box-116785 .clearfix, div#s-la-box-116785-container {
+    background: none;
+    box-shadow: none;
+}
+
+#s-la-box-116785-container{
+    padding: 0px;
+    margin-bottom: 40px;
+}
+
+div#s-la-content-text-116909 {
+    font-size: 12px;
+    font-family: Roboto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 7px #000000;
+}
+
+#s-la-box-116785 .s-la-content-link a{
+    font-size: 12px;
+    font-family: Roboto;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 1px 1px 7px #000000;
+    color: white;
+    margin-right: 40px;
+}
+
+
+#s-la-content-link-116911{
+    float: left;
+}
+
+#s-la-box-116786-container{
+    top: -20px;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    text-align: center;
+    background: #3c1053cc;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s-la-box-116786 .s-la-box-content{
+    background: transparent;
+    color: white;
+}
+
+
+/*faq link*/
+#s-la-content-link-116930 a.s-la-content-link-a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #FDD023;
+    color: #434343;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 42px;
+    align-items: center;
+}
+
+div#s-la-content-link-116930 {
+    margin: 0px -15px;
+}
+
 /* Modifying breakpoint via CSS for Bootstrap v3 */
 
 @media (max-width: 1199px) {
+
+  #hours{
+    display: none;
+    /* temporary style */
+  }
+
+  h1.s-la-public-header-title{
+    padding-top: 90px;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid #ffffff52;
+  }
+
   .navbar-header {
     float: none;
   }
@@ -822,4 +1018,9 @@ input[type="number"]:focus,
 [type="tel"].form-control:focus,
 [contenteditable].form-control:focus {
   box-shadow: none;
+}
+
+#main-content {
+  padding-top: 120px;
+  min-height: 90vh;
 }
