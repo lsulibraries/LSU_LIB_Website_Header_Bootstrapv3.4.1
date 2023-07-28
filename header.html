@@ -173,14 +173,6 @@
                                 </a>
                             </li>
                             <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#faqs-search-tab"
-                                    data-toggle="tab">
-                                    <i
-                                        class="fas fa-question position-absolute d-flex justify-content-center align-items-center"></i>
-                                    <span class="tab-label position-relative">FAQs</span>
-                                </a>
-                            </li>
-                            <li role="presentation" class="h-100">
                                 <a class="search-tab h-100 align-items-center" href="#databases-search-tab"
                                     data-toggle="tab">
                                     <i
@@ -202,6 +194,14 @@
                                     <i
                                         class="fas fa-book position-absolute d-flex justify-content-center align-items-center"></i>
                                     <span class="tab-label position-relative">E<nobr>-Textbooks</nobr></span>
+                                </a>
+                            </li>
+                            <li role="presentation" class="h-100">
+                                <a class="search-tab h-100 align-items-center" href="#faqs-search-tab"
+                                    data-toggle="tab">
+                                    <i
+                                        class="fas fa-question position-absolute d-flex justify-content-center align-items-center"></i>
+                                    <span class="tab-label position-relative">FAQs</span>
                                 </a>
                             </li>
                         </ul>
@@ -329,38 +329,7 @@
                                             class="fas fa-search"></i></button>
                                 </form>
                             </div>
-                            <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="faqs-search-tab"
-                                data-toggle="tooltip" data-placement="bottom" title="<div class='tab-form-detail d-flex align-items-center'>
-                                <div class='tab-detail-icon'>
-                                    <i class='fas fa-question'></i>
-                                </div>
-                                <div class='tab-detail-body'>
-                                    <div class='tab-detail-title'>FAQs</div>
-                                    <div class='tab-detail-description'>Search our Frequently Asked Questions.</div>
-                                </div>
-                            </div>">
-                                <form action="https://askus.lib.lsu.edu/search/" class="d-flex align-items-center">
-                                    <div class="w-100 d-flex input-container">
-                                        <input type="hidden" name="t" value="0">
-                                        <input type="hidden" name="g[]" value="10606">
-                                        <input type="hidden" name="g[]" value="9630">
-                                        <input type="hidden" name="g[]" value="287">
-                                        <input type="hidden" name="g[]" value="8979">
-                                        <input type="hidden" name="g[]" value="10636">
-                                        <input type="hidden" name="g[]" value="9629">
-                                        <input type="hidden" name="g[]" value="9631">
-                                        <input type="hidden" name="g[]" value="10637">
-                                        <input type="hidden" name="g[]" value="4711">
-                                        <input type="hidden" name="g[]" value="10669">
-                                        <div class="w-100 flex-grow-1">
-                                            <input type="text" class="search-input form-control" name="q"
-                                                placeholder="Search our Frequently Asked Questions...">
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
-                                </form>
-                            </div>
+
                             <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="databases-search-tab"
                                 data-toggle="tooltip" data-placement="bottom" title="<div class='tab-form-detail d-flex align-items-center'>
                                 <div class='tab-detail-icon'>
@@ -484,6 +453,38 @@
                                             <input type="text" class="search-input form-control" name="combine"
                                                 size="30" maxlength="128"
                                                 placeholder="Search by title, course, intructor or dept prefix...">
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-search"><i
+                                            class="fas fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="faqs-search-tab"
+                                data-toggle="tooltip" data-placement="bottom" title="<div class='tab-form-detail d-flex align-items-center'>
+                                <div class='tab-detail-icon'>
+                                    <i class='fas fa-question'></i>
+                                </div>
+                                <div class='tab-detail-body'>
+                                    <div class='tab-detail-title'>FAQs</div>
+                                    <div class='tab-detail-description'>Search our Frequently Asked Questions.</div>
+                                </div>
+                            </div>">
+                                <form action="https://askus.lib.lsu.edu/search/" class="d-flex align-items-center">
+                                    <div class="w-100 d-flex input-container">
+                                        <input type="hidden" name="t" value="0">
+                                        <input type="hidden" name="g[]" value="10606">
+                                        <input type="hidden" name="g[]" value="9630">
+                                        <input type="hidden" name="g[]" value="287">
+                                        <input type="hidden" name="g[]" value="8979">
+                                        <input type="hidden" name="g[]" value="10636">
+                                        <input type="hidden" name="g[]" value="9629">
+                                        <input type="hidden" name="g[]" value="9631">
+                                        <input type="hidden" name="g[]" value="10637">
+                                        <input type="hidden" name="g[]" value="4711">
+                                        <input type="hidden" name="g[]" value="10669">
+                                        <div class="w-100 flex-grow-1">
+                                            <input type="text" class="search-input form-control" name="q"
+                                                placeholder="Search our Frequently Asked Questions...">
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-search"><i
