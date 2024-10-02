@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha512-L7MWcK7FNPcwNqnLdZq86lTHYLdQqZaz5YcAgE+5cnGmlw8JT03QB2+oxL100UeB6RlzZLUxCGSS4/++mNZdxw=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
@@ -26,9 +26,9 @@
 </head>
 
 <body>
-    <header class="text-uppercase font-weight-bold position-fixed w-100">
+    <header class="font-weight-bold position-fixed w-100 scroll-none">
         <nav id="nav-container" class="navbar navbar-default mb-0">
-            <div class="container d-flex justify-content-between align-items-center position-relative">
+            <div class="d-flex justify-content-between align-items-center h-100 mx-4">
                 <div id="spacer" class="d-flex flex-grow-1 flex-shrink-1 flex-basis-0"></div>
                 <div class="navbar-header flex-grow-1 flex-shrink-1 flex-basis-0">
                     <a class="navbar-brand logo-container" href="https://lib.lsu.edu/">
@@ -81,21 +81,21 @@
                     </a>
                 </div>
                 <div id="main-container" class="d-flex flex-column align-items-center position-absolute">
-                    <div id="main-navigation" class="position-relative collapse navbar-collapse">
+                    <div id="main-navigation" class="position-relative collapse navbar-collapse text-uppercase">
                         <ul class="nav navbar-nav">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">Help with <span
                                         class="caret caret-custom"></span></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu pt-0 pb-0  ">
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/borrowing">Borrowing</a>
                                     </li>
-                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/research">Research</a></li>
-                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/publishing">Publishing</a>
+                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/research">Start Your
+                                            Research</a></li>
+                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/researchersupport">Researcher
+                                            Support</a>
                                     </li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/teaching">Teaching</a></li>
-                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/ill">Interlibrary loan</a>
-                                    </li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/newspapers">Newspapers</a>
                                     </li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/textbooks">Textbooks</a>
@@ -106,13 +106,15 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">Visit <span
                                         class="caret caret-custom"></span></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu pt-0 pb-0">
+                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/hours">Hours</a>
+                                    </li>
+                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/maps">Maps</a></li>
                                     <li class="dropdown-item"><a
                                             href="https://lsu.libcal.com/calendar/eventsandprogramming">Events &
                                             Calendar</a></li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/exhibitions">Exhibitions</a>
                                     </li>
-                                    <li class="dropdown-item disabled"><a href="#">Hours & Maps</a></li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/spaces">Study Spaces</a>
                                     </li>
                                 </ul>
@@ -121,12 +123,13 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">Libraries & Collections <span
                                         class="caret caret-custom"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-item"><a href="https://lib.lsu.edu">Main Library</a></li>
+                                <ul class="dropdown-menu pt-0 pb-0">
+                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/about#mainlibrary">Main
+                                            Library</a></li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/special">Special
                                             Collections</a></li>
-                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/govdocs">Government
-                                            Documents</a></li>
+                                    <li class="dropdown-item"><a href="https://lib.lsu.edu/govpubs">Government
+                                            Publications</a></li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/music">Music Resources</a>
                                     </li>
                                     <li class="dropdown-item"><a href="https://lib.lsu.edu/oralhistory">Oral
@@ -137,89 +140,90 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                     aria-haspopup="true" aria-expanded="false">About <span
                                         class="caret caret-custom"></span></a>
-                                <ul class="dropdown-menu">
+                                <ul class="dropdown-menu pt-0 pb-0">
                                     <li class="dropdown-item">
-                                        <a href="https://lib.lsu.edu/about" title="About LSU Libraries"
-                                            class="nav-link--about" data-drupal-link-system-path="node/5559">About LSU
+                                        <a href="https://lib.lsu.edu/about" title="About LSU Libraries">About LSU
                                             Libraries</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="https://lib.lsu.edu/newsandnotes" title="LSU Library News and Notes"
-                                            class="nav-link--newsandnotes" data-drupal-link-system-path="node/4373">News
+                                        <a href="https://lib.lsu.edu/newsandnotes"
+                                            title="LSU Library News and Notes">News
                                             and Notes</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="https://lib.lsu.edu/staff" title="Staff Directory"
-                                            class="nav-link--staff" data-drupal-link-system-path="node/358">Staff
+                                        <a href="https://lib.lsu.edu/staff" title="Staff Directory">Staff
                                             Directory</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="https://lib.lsu.edu/friends" title="Friends of the LSU Libraries"
-                                            class="nav-link--friends" data-drupal-link-system-path="node/5566">Friends
+                                        <a href="https://lib.lsu.edu/friends"
+                                            title="Friends of the LSU Libraries">Friends
                                             of the LSU Libraries</a>
                                     </li>
                                     <li class="dropdown-item">
-                                        <a href="https://lib.lsu.edu/giving" title="Giving to LSU Libraries"
-                                            class="nav-link--giving" data-drupal-link-system-path="node/5586">Giving to
+                                        <a href="https://lib.lsu.edu/giving" title="Giving to LSU Libraries">Giving to
                                             LSU Libraries</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="https://lib.lsu.edu/policies" title="Policies"
+                                            class="nav-link--giving">Policies</a>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                     <div id="search-container" class="position-relative">
-                        <ul id="search-tabs-container" class="nav nav-tabs border-none d-flex align-items-center"
-                            role="tablist">
-                            <li role="presentation" class="active h-100">
-                                <a class="search-tab h-100 align-items-center" href="#website-search-tab"
+                        <ul id="search-tabs-container"
+                            class="nav nav-tabs border-none d-flex align-items-center text-uppercase" role="tablist">
+                            <li role="presentation" class="active h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#website-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-window-maximize position-absolute d-flex justify-content-center align-items-center"></i>
                                     <span class="tab-label position-relative">Website</span>
                                 </a>
                             </li>
-                            <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#discovery-search-tab"
+                            <li role="presentation" class="h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#discovery-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-seedling position-absolute d-flex justify-content-center align-items-center"></i>
                                     <span class="tab-label position-relative">Discovery</span>
                                 </a>
                             </li>
-                            <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#catalog-search-tab"
+                            <li role="presentation" class="h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#catalog-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-book position-absolute d-flex justify-content-center align-items-center"></i>
                                     <span class="tab-label position-relative">Catalog</span>
                                 </a>
                             </li>
-                            <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#databases-search-tab"
+                            <li role="presentation" class="h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#databases-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-server position-absolute d-flex justify-content-center align-items-center"></i>
                                     <span class="tab-label position-relative">Databases</span>
                                 </a>
                             </li>
-                            <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#journal-and-news-search-tab"
+                            <li role="presentation" class="h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#journal-and-news-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-file-alt position-absolute d-flex justify-content-center align-items-center"></i>
-                                    <span class="tab-label position-relative">Journal & News</span>
+                                    <span class="tab-label position-relative">Journals & News</span>
                                 </a>
                             </li>
-                            <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#e-textbooks-search-tab"
+                            <li role="presentation" class="h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#e-textbooks-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-book position-absolute d-flex justify-content-center align-items-center"></i>
                                     <span class="tab-label position-relative">E<nobr>-Textbooks</nobr></span>
                                 </a>
                             </li>
-                            <li role="presentation" class="h-100">
-                                <a class="search-tab h-100 align-items-center" href="#faqs-search-tab"
+                            <li role="presentation" class="h-100 w-100">
+                                <a class="search-tab h-100 align-items-center w-100" href="#faqs-search-tab"
                                     data-toggle="tab">
                                     <i
                                         class="fas fa-question position-absolute d-flex justify-content-center align-items-center"></i>
@@ -246,13 +250,14 @@
                             </div>">
                                 <form action="https://lib.lsu.edu/" class="d-flex align-items-center">
                                     <div class="w-100 d-flex input-container">
-                                        <div class="w-100 flex-grow-1">
+                                        <div class="w-100 flex-grow-1 d-flex align-items-center position-relative">
                                             <input type="text" class="search-input form-control"
                                                 name="search_api_fulltext" placeholder="Search the website...">
+                                            <button type="submit" class="btn btn-primary btn-search"><i
+                                                    class="fas fa-search"></i></button>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="discovery-search-tab"
@@ -282,13 +287,14 @@
                                         <input type="hidden" value="+AND+" name="ebscohostsearchmode"
                                             id="ebscohostsearchmode">
                                         <input type="hidden" value="" name="ebscohostkeywords" id="ebscohostkeywords"> -->
-                                        <div class="w-100 flex-grow-1">
+                                        <div class="w-100 flex-grow-1 d-flex align-items-center position-relative">
                                             <input id="inputDiscovery" type="text" class="search-input form-control"
                                                 name="ebscohostsearchtext" placeholder="Search using Discovery...">
+                                            <button type="submit" class="btn btn-primary btn-search"><i
+                                                    class="fas fa-search"></i></button>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="catalog-search-tab"
@@ -303,52 +309,71 @@
                             </div>">
                                 <form action="https://lsu.ent.sirsi.net/client/en_US/lsu/search/results" method="get"
                                     class="d-flex align-items-center">
-                                    <div class="w-100 d-flex input-container">
-                                        <div class="w-100 flex-grow-1">
-                                            <label for="qu" class="form-text text-muted">Search terms</label>
-                                            <input type="text" class="search-input form-control" name="qu"
-                                                maxlength="255" placeholder="Search the catalog...">
+                                    <div class="d-flex flex-fill input-container">
+                                        <div class="flex-fill w-100">
+                                            <div class="d-flex align-items-center position-relative">
+                                                <input type="text" class="search-input form-control" name="qu"
+                                                    maxlength="255" placeholder="Search the catalog...">
+                                                <button type="submit" class="btn btn-primary btn-search"><i
+                                                        class="fas fa-search"></i></button>
+                                            </div>
                                         </div>
-                                        <div class="w-100 flex-grow-1">
-                                            <label for="rt" class="form-text text-muted">Search by</label>
-                                            <select name="rt" class="border-none">
-                                                <option selected value="Keyword">Keyword</option>
-                                                <option value="false|||AUTHOR|||Author">Author</option>
-                                                <option value="false|||TITLE|||Title">Title</option>
-                                                <option value="false|||SUBJECT|||Subject">Subject</option>
-                                                <option value="false|||C_PERIODICAL_TITLE|||Journal Title">Journal Title
-                                                </option>
-                                            </select>
-                                        </div>
-                                        <div class="w-100 flex-grow-1">
-                                            <label for="qf" class="form-text text-muted">Select a library</label>
-                                            <select name="qf" class="border-none">
-                                                <option value="ALL">All Libraries</option>
-                                                <option
-                                                    value="LIBRARY	Library	21:LSU-MAIN	LSU Library (Main Collection)">
-                                                    LSU Library</option>
-                                                <option value="LIBRARY	Library	21:SPEC_COLL	Special Collections">Special
-                                                    Collections
-                                                </option>
-                                                <option value="LIBRARY	Library	21:DOCS_MICRO	Government Documents ">
-                                                    Government Documents
-                                                </option>
-                                                <option value="LIBRARY	Library	21:MUSIC	Carter Music Resource Center">
-                                                    Music
-                                                    Resources
-                                                </option>
-                                                <option value="LIBRARY	Library	21:CIC	Cartographic Information">
-                                                    Cartographic
-                                                    Information Center</option>
-                                                <option value="LIBRARY	Library	21:VETMED	Veterinary Medicine Library">
-                                                    Veterinary Medicine Library</option>
-                                                <option value="LIBRARY	Library	21:NONLIBRARY	Other Collections">Other
-                                                    Collections</option>
-                                            </select>
+                                        <div class="d-flex justify-content-between align-items-center search-options">
+                                            <div class="d-flex flex-row px-3">
+                                                <div>
+                                                    <label for="rt" class="form-text text-uppercase">Search by</label>
+                                                    <select name="rt" class="border-none">
+                                                        <option selected value="Keyword">Keyword</option>
+                                                        <option value="false|||AUTHOR|||Author">Author</option>
+                                                        <option value="false|||TITLE|||Title">Title</option>
+                                                        <option value="false|||SUBJECT|||Subject">Subject</option>
+                                                        <option value="false|||C_PERIODICAL_TITLE|||Journal Title">
+                                                            Journal
+                                                            Title
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label for="qf" class="form-text text-uppercase">Select a
+                                                        library</label>
+                                                    <select name="qf" class="border-none">
+                                                        <option value="ALL">All Libraries</option>
+                                                        <option
+                                                            value="LIBRARY	Library	21:LSU-MAIN	LSU Library (Main Collection)">
+                                                            LSU Library</option>
+                                                        <option
+                                                            value="LIBRARY	Library	21:SPEC_COLL	Special Collections">
+                                                            Special
+                                                            Collections
+                                                        </option>
+                                                        <option
+                                                            value="LIBRARY	Library	21:DOCS_MICRO	Government Documents ">
+                                                            Government Documents
+                                                        </option>
+                                                        <option
+                                                            value="LIBRARY	Library	21:MUSIC	Carter Music Resource Center">
+                                                            Music
+                                                            Resources
+                                                        </option>
+                                                        <option value="LIBRARY	Library	21:CIC	Cartographic Information">
+                                                            Cartographic
+                                                            Information Center</option>
+                                                        <option
+                                                            value="LIBRARY	Library	21:VETMED	Veterinary Medicine Library">
+                                                            Veterinary Medicine Library</option>
+                                                        <option value="LIBRARY	Library	21:NONLIBRARY	Other Collections">
+                                                            Other
+                                                            Collections</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <a href="https://lsu.ent.sirsi.net/client/en_US/lsu/?rm=MORE+SEARCH+OP0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue"
+                                                    class="more-search">Advanced search</a>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
 
@@ -364,62 +389,71 @@
                             </div>">
                                 <form action="https://guides.lib.lsu.edu/az.php" method="get"
                                     class="d-flex align-items-center">
-                                    <div class="w-100 d-flex input-container align-items-center">
-                                        <div class="w-100 flex-grow-1">
-                                            <label for="q" class="form-text text-muted">Search terms</label>
-                                            <input type="text" class="search-input form-control" name="q"
-                                                placeholder="Search for a database (JSTOR, etc.)...">
+                                    <div class="d-flex flex-fill input-container align-items-center">
+                                        <div class="flex-fill w-100">
+                                            <div class="d-flex align-items-center position-relative">
+                                                <input type="text" class="search-input form-control" name="q"
+                                                    placeholder="Search for a database (JSTOR, etc.)...">
+                                                <button type="submit" class="btn btn-primary btn-search"><i
+                                                        class="fas fa-search"></i></button>
+                                            </div>
                                         </div>
-                                        <div class="w-100 flex-grow-1">
-                                            <label for="a" class="form-text text-muted">A-Z</label>
-                                            <select name="a" class="border-none">
-                                                <option value="a">A</option>
-                                                <option value="b">B</option>
-                                                <option value="c">C</option>
-                                                <option value="d">D</option>
-                                                <option value="e">E</option>
-                                                <option value="f">F</option>
-                                                <option value="g">G</option>
-                                                <option value="h">H</option>
-                                                <option value="i">I</option>
-                                                <option value="j">J</option>
-                                                <option value="k">K</option>
-                                                <option value="l">L</option>
-                                                <option value="m">M</option>
-                                                <option value="n">N</option>
-                                                <option value="o">O</option>
-                                                <option value="p">P</option>
-                                                <option disabled>Q</option>
-                                                <option value="r">R</option>
-                                                <option value="s">S</option>
-                                                <option value="t">T</option>
-                                                <option value="u">U</option>
-                                                <option value="v">V</option>
-                                                <option value="w">W</option>
-                                                <option disabled>X</option>
-                                                <option disabled>Y</option>
-                                                <option value="z">Z</option>
-                                                <option value="pound">#</option>
-                                            </select>
-                                        </div>
-                                        <div class="dropdown flex-grow-1 w-max">
-                                            <a href="#" class="dropdown-toggle d-block w-max" data-toggle="dropdown"
-                                                role="button" aria-haspopup="true" aria-expanded="false">Database links
-                                                <span class="caret caret-custom"></span></a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown-item"><a target="_blank"
-                                                        href="https://guides.lib.lsu.edu/az.php?t=11403">Frequently used
-                                                        databases</a></li>
-                                                <li class="dropdown-item"><a target="_blank"
-                                                        href="https://guides.lib.lsu.edu/az.php">All Databases</a></li>
-                                                <li class="dropdown-item"><a target="_blank"
-                                                        href="https://lib.lsu.edu/services/copyright/terms">Terms &
-                                                        Conditions</a></li>
-                                            </ul>
+                                        <div
+                                            class="d-flex justify-content-start align-items-center search-options align-self-start">
+                                            <div class="px-3">
+                                                <label for="a" class="form-text text-uppercase">A-Z</label>
+                                                <select name="a" class="border-none">
+                                                    <option value="a">A</option>
+                                                    <option value="b">B</option>
+                                                    <option value="c">C</option>
+                                                    <option value="d">D</option>
+                                                    <option value="e">E</option>
+                                                    <option value="f">F</option>
+                                                    <option value="g">G</option>
+                                                    <option value="h">H</option>
+                                                    <option value="i">I</option>
+                                                    <option value="j">J</option>
+                                                    <option value="k">K</option>
+                                                    <option value="l">L</option>
+                                                    <option value="m">M</option>
+                                                    <option value="n">N</option>
+                                                    <option value="o">O</option>
+                                                    <option value="p">P</option>
+                                                    <option disabled>Q</option>
+                                                    <option value="r">R</option>
+                                                    <option value="s">S</option>
+                                                    <option value="t">T</option>
+                                                    <option value="u">U</option>
+                                                    <option value="v">V</option>
+                                                    <option value="w">W</option>
+                                                    <option disabled>X</option>
+                                                    <option disabled>Y</option>
+                                                    <option value="z">Z</option>
+                                                    <option value="pound">#</option>
+                                                </select>
+                                            </div>
+                                            <div class="dropdown">
+                                                <label for="q" class="form-text text-uppercase">Database links</label>
+                                                <a href="#" class="dropdown-toggle d-block w-max" data-toggle="dropdown"
+                                                    role="button" aria-haspopup="true" aria-expanded="false">Database
+                                                    links
+                                                    <span class="caret caret-custom"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="dropdown-item"><a target="_blank"
+                                                            href="https://guides.lib.lsu.edu/az.php?t=11403">Frequently
+                                                            used
+                                                            databases</a></li>
+                                                    <li class="dropdown-item"><a target="_blank"
+                                                            href="https://guides.lib.lsu.edu/az.php">All Databases</a>
+                                                    </li>
+                                                    <li class="dropdown-item"><a target="_blank"
+                                                            href="https://lib.lsu.edu/services/copyright/terms">Terms &
+                                                            Conditions</a></li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="journal-and-news-search-tab"
@@ -436,13 +470,18 @@
                                     class="d-flex align-items-center">
                                     <div class="w-100 d-flex input-container align-items-center">
                                         <div class="w-100 flex-grow-1">
-                                            <label for="q" class="form-text text-muted">Search terms</label>
-                                            <input type="text" class="search-input form-control" name="q"
-                                                placeholder="Search for journals and newspapers...">
+                                            <div class="d-flex align-items-center position-relative">
+                                                <input type="text" class="search-input form-control flex-fill" name="q"
+                                                    placeholder="Search for journals and newspapers...">
+                                                <button type="submit" class="btn btn-primary btn-search"><i
+                                                        class="fas fa-search"></i></button>
+                                            </div>
                                         </div>
-                                        <div class="dropdown flex-grow-1 w-max">
+                                        <div
+                                            class="dropdown flex-grow-1 ml-3 align-items-center justify-content-end search-options align-self-start">
+                                            <label for="q" class="form-text text-uppercase">Related links</label>
                                             <a href="#" class="dropdown-toggle d-block w-max" data-toggle="dropdown"
-                                                role="button" aria-haspopup="true" aria-expanded="false">Related links
+                                                role="button" aria-haspopup="true" aria-expanded="false">Choose a link
                                                 <span class="caret caret-custom"></span></a>
                                             <ul class="dropdown-menu">
                                                 <li class="dropdown-item"><a target="_blank"
@@ -455,8 +494,7 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="e-textbooks-search-tab"
@@ -471,14 +509,15 @@
                             </div>">
                                 <form action="https://lib.lsu.edu/textbooks" class="d-flex align-items-center">
                                     <div class="w-100 flex-grow-1">
-                                        <div class="w-100 d-flex input-container">
+                                        <div class="w-100 d-flex input-container align-items-center position-relative">
                                             <input type="text" class="search-input form-control" name="combine"
                                                 size="30" maxlength="128"
                                                 placeholder="Search by title, course, intructor or dept prefix...">
+                                            <button type="submit" class="btn btn-primary btn-search"><i
+                                                    class="fas fa-search"></i></button>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
                             <div role="tabpanel" class="tab-pane fade tab-pane-custom" id="faqs-search-tab"
@@ -504,43 +543,85 @@
                                         <input type="hidden" name="g[]" value="10637">
                                         <input type="hidden" name="g[]" value="4711">
                                         <input type="hidden" name="g[]" value="10669">
-                                        <div class="w-100 flex-grow-1">
+                                        <div class="w-100 flex-grow-1 d-flex align-items-center position-relative">
                                             <input type="text" class="search-input form-control" name="q"
                                                 placeholder="Search our Frequently Asked Questions...">
+                                            <button type="submit" class="btn btn-primary btn-search"><i
+                                                    class="fas fa-search"></i></button>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary btn-search"><i
-                                            class="fas fa-search"></i></button>
+
                                 </form>
                             </div>
                         </div>
                         <div id="input-placeholder" class="d-flex align-items-center">
-                            <span class="flex-grow-1 text-align-center">Start your search...</span>
+                            <span class="flex-grow-1 text-align-center text-uppercase">Start your search...</span>
                             <button type="submit"
                                 class="btn btn-primary btn-search d-flex align-items-center justify-content-center"><i
                                     class="fas fa-search"></i></button>
                         </div>
+                        <div id="hours" class="d-flex align-items-center justify-content-between mx-5 text-uppercase">
+                            <div id="api_hours_today_iid1486_lid241" data-once="tile"></div>
+                            <div id="api_hours_today_iid1486_lid236" data-once="tile"></div>
+                        </div>
+                        <div id="shortcut-bar" class="shortcut-bar d-flex justify-content-between text-uppercase">
+                            <a href="https://lib.lsu.edu/myaccount" class="mobile-icon" data-bs-placement="bottom"
+                                data-bs-toggle="tooltip" title="" data-bs-original-title="My Account">
+                                <i class="fas fa-user"></i>
+                                <span class="long-label">My Account</span>
+                                <span class="short-label">Account</span>
+                            </a>
+                            <a href="https://lib.lsu.edu/spaces/booking" alt="Book a study room" class="mobile-icon"
+                                data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                                data-bs-original-title="Study Rooms">
+                                <i class="fas fa-key"></i>
+                                <span class="long-label">Study Rooms</span>
+                                <span class="short-label">Rooms</span>
+                            </a>
+                            <a href="https://lib.lsu.edu/textbooks" alt="Textbooks" class="mobile-icon"
+                                data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                                data-bs-original-title="Textbooks">
+                                <i class="fas fa-book"></i>
+                                <span class="long-label">Textbooks</span>
+                                <span class="short-label">Books</span>
+                            </a>
+                            <a href="https://lib.lsu.edu/ill" alt="Interlibrary Loan" class="mobile-icon"
+                                data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                                data-bs-original-title="Interlibrary Loan">
+                                <i class="fas fa-box-open"></i>
+                                <span class="long-label">Interlibrary Loan</span>
+                                <span class="short-label">ILL</span>
+                            </a>
+                            <a href="https://guides.lib.lsu.edu/" alt="Research Guides" target="_blank"
+                                class="mobile-icon" data-bs-placement="bottom" data-bs-toggle="tooltip" title=""
+                                data-bs-original-title="Research Guides">
+                                <i class="fas fa-scroll"></i>
+                                <span class="long-label">Research Guides</span>
+                                <span class="short-label">Guides</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="navbar-footer d-flex flex-grow-1 flex-shrink-1 flex-basis-0 justify-content-end">
-                    <button id="ask-us" class="text-uppercase border-none" type="button">
+                    <button id="search-button"
+                        class="nav-footer-btn text-uppercase border-none d-flex align-items-center" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <button id="ask-us" class="nav-footer-btn text-uppercase border-none d-flex align-items-center"
+                        type="button">
                         <a href="https://askus.lib.lsu.edu/"><span class="title">Ask Us</span></a>
-                        <i class="fas fa-question"></i>
+                        <i class="fas fa-comments"></i>
                     </button>
                     <button href="#off-canvas" class="js-offcanvas-trigger navbar-toggle collapsed"
-                        data-toggle="collapse" data-offcanvas-trigger="off-canvas" aria-expanded="false">
+                        data-toggle="collapse" data-offcanvas-trigger="off-canvas" aria-expanded="false" type="button">
                         <span class="sr-only">Menu</span>
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
             </div>
+
         </nav>
-        <div class="container">
-            <div id="hours" class="d-flex align-items-center justify-content-between">
-                <div id="api_hours_today_iid1486_lid241" data-once="tile"></div>
-                <div id="api_hours_today_iid1486_lid236" data-once="tile"></div>
-            </div>
-        </div>
+
     </header>
 
     <aside class="js-offcanvas c-offcanvas--custom" data-offcanvas-options='{ "modifiers": "right,overlay" }'
@@ -598,7 +679,7 @@
             </button>
         </div>
         <nav>
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav w-100">
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                         aria-expanded="false">Help With <span class="caret"></span></a>
@@ -609,18 +690,15 @@
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/research"
-                                title="Get help with your research here at the Libraries.">Research</a>
+                                title="Get help with your research here at the Libraries.">Start Your Research</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="https://lib.lsu.edu/publishing"
-                                title="Get help with Publishing at the Libraries.">Publishing</a>
+                            <a href="https://lib.lsu.edu/researchersupport"
+                                title="Get help with Publishing at the Libraries.">Researcher Support</a>
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/teaching"
                                 title="Get help with teaching at the Libraries.">Teaching</a>
-                        </li>
-                        <li class="dropdown-item">
-                            <a href="https://lib.lsu.edu/ill">Interlibrary Loan</a>
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/newspapers"
@@ -637,6 +715,12 @@
                         aria-expanded="false">Visit <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
+                            <a href="https://lib.lsu.edu/hours" title="Hours and maps">Hours</a>
+                        </li>
+                        <li class="dropdown-item">
+                            <a href="https://lib.lsu.edu/maps" title="Hours and maps">Maps</a>
+                        </li>
+                        <li class="dropdown-item">
                             <a href="https://lsu.libcal.com/calendar/eventsandprogramming"
                                 title="Events and Calendar at LSU Libraries.">Events & Calendar</a>
                         </li>
@@ -644,9 +728,7 @@
                             <a href="https://lib.lsu.edu/exhibitions"
                                 title="Check out the current Exhibitions.">Exhibitions</a>
                         </li>
-                        <li class="dropdown-item disabled">
-                            <a href="#" title="Hours and maps">Hours & Maps</a>
-                        </li>
+
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/spaces" title="Book a space to study.">Study Spaces</a>
                         </li>
@@ -663,7 +745,8 @@
                             <a href="https://lib.lsu.edu/special" title="Special Collections">Special Collections</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="https://lib.lsu.edu/govdocs" title="Government Documents">Government Documents</a>
+                            <a href="https://lib.lsu.edu/govpubs" title="Government Documents">Government
+                                Publications</a>
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/music" title="Music Resources">Music Resources</a>
@@ -679,32 +762,33 @@
                         aria-expanded="false">About <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li class="dropdown-item">
-                            <a href="https://lib.lsu.edu/about" title="About LSU Libraries" class="nav-link--about"
-                                data-drupal-link-system-path="node/5559">About LSU Libraries</a>
+                            <a href="https://lib.lsu.edu/about" title="About LSU Libraries"
+                                class="nav-link--about">About LSU Libraries</a>
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/newsandnotes" title="LSU Library News and Notes"
-                                class="nav-link--newsandnotes" data-drupal-link-system-path="node/4373">News and
+                                class="nav-link--newsandnotes">News and
                                 Notes</a>
                         </li>
                         <li class="dropdown-item">
-                            <a href="https://lib.lsu.edu/staff" title="Staff Directory" class="nav-link--staff"
-                                data-drupal-link-system-path="node/358">Staff Directory</a>
+                            <a href="https://lib.lsu.edu/staff" title="Staff Directory" class="nav-link--staff">Staff
+                                Directory</a>
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/friends" title="Friends of the LSU Libraries"
-                                class="nav-link--friends" data-drupal-link-system-path="node/5566">Friends of the LSU
+                                class="nav-link--friends">Friends of the LSU
                                 Libraries</a>
                         </li>
                         <li class="dropdown-item">
                             <a href="https://lib.lsu.edu/giving" title="Giving to LSU Libraries"
-                                class="nav-link--giving" data-drupal-link-system-path="node/5586">Giving to LSU
+                                class="nav-link--giving">Giving to LSU
                                 Libraries</a>
                         </li>
+                        <li class="dropdown-item">
+                            <a href="https://lib.lsu.edu/giving" title="Giving to LSU Libraries"
+                                class="nav-link--giving">Policies</a>
+                        </li>
                     </ul>
-
-
-
                 </li>
             </ul>
     </aside>
@@ -712,33 +796,63 @@
     <div id="main-content"></div>
 
     <footer id="custom-footer">
-        <div class="container d-flex align-items-start">
-            <div class="flex-grow-1">
-                <a href="https://lib.lsu.edu">
-                    <img id="footer-logo" alt="" src="https://lib.lsu.edu/themes/custom/origami/images/logo_vert.png">
-                </a>
+        <div class="mx-5">
+            <div class="d-flex justify-content-center">
+                <button id="ask-us-btn" type="button">Ask Us <i class="fas fa-comments"></i></button>
             </div>
-            <div>
-                <p>LSU Libraries<br>Baton Rouge, LA 70803</p>
-                <p>TEL (225) 578-5652<br>FAX (225) 578-9432</p>
-                <a href="https://lib.lsu.edu/about/staff">
-                    <p>Contact us</p>
-                </a>
-            </div>
-            <div>
-                <p>© 1996 - 2023 LSU LIBRARIES</p>
-                <p>
-                    <a
-                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=P61NLa5Q2UeDoJrisfRm-AXaBV0JVZ9NibGmPOaCylRUQ1ZPODM4UU1FV1ZZS0RXS1QyNjJaTkRJWS4u">
-                        PROVIDE WEBSITE FEEDBACK
-                    </a><br>
-                    <a href="http://www.lsu.edu/accessibility/index.php">
-                        ACCESSIBILITY STATEMENT
-                    </a><br>
-                    <a href="https://lib.lsu.edu/accessibility">
-                        ACCESSIBILITY INFORMATION
-                    </a><br>
-                </p>
+            <div class="d-flex justify-content-between flex-wrap">
+                <div class="d-flex flex-column justify-content-between w-max mb-5">
+                    <div>
+                        <a href="https://lib.lsu.edu/">
+                            <h4 class="gold font-weight-bold mb-4 text-transform-uppercase letter-spacing-1">Main
+                                Library</h4>
+                        </a>
+                        <div class="line-height-1 mb-3">
+                            <p>Baton Rouge, LA 70803</p>
+                            <p>© 1996 - 2024 LSU Libraries</p>
+                        </div>
+                        <div class="line-height-1">
+                            <p>Tel: 225-578-5652</p>
+                            <p>Fax: 225-578-6825</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <a href="https://www.facebook.com/LSUMainLibrary" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/lsulibraries" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/lsulibraries" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="w-max mb-5 line-height-2 text-transform-none">
+                    <p><a href="https://lsu.edu/">LSU</a> <span class="mx-3 text-muted">|</span> <a
+                            href="https://my.lsu.edu/">myLSU</a></p>
+                    <p><a href="https://lib.lsu.edu/sitemap">A to Z sitemap</a></p>
+                    <p><a href="mailto:libraries@lsu.edu">Contact us</a></p>
+                    <p><a href="https://lib.lsu.edu/about/jobs">Employment opportunities</a></p>
+                    <p><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=5bhazgoab&p=oi&m=1114771561534">Sign up
+                            for our newsletter</a></p>
+                    <p><a href="#">Website feedback</a></p>
+                    <p><a href="https://lsu.edu/accessibility/">Accessibility statement</a></p>
+                    <p><a href="https://lsu.edu/privacy/">Privacy statement</a></p>
+                    <p><a href="https://digitalcommons.lsu.edu/cwbr/">Civil War Book Review</a></p>
+                </div>
+                <div class="d-flex flex-column justify-content-between w-max mb-5">
+                    <div>
+                        <a href="https://lib.lsu.edu/special">
+                            <h4 class="gold font-weight-bold mb-4 text-transform-uppercase letter-spacing-1">Special
+                                Collections</h4>
+                        </a>
+                        <p>Tel: 225-578-6544</p>
+                    </div>
+                    <div>
+                        <a href="https://www.facebook.com/LSUspecialcollections" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a>
+                        <a href="https://twitter.com/WhatintheHill" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/lsuspecialcollections" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -774,23 +888,31 @@
             });
 
             $(window).on("scroll", function (e) {
+
                 if ($(window).scrollTop() <= 20) {
+                    $("header").addClass("scroll-none");
                     $("header").removeClass("scrolled");
                 }
                 else {
+                    $("header").removeClass("scroll-none");
                     $("header").addClass("scrolled");
                 }
+
             });
 
-            $("#input-placeholder").on("click", function (e) {
+            function displaySearch(e) {
                 $("header").removeClass("scrolled");
-            })
+            }
+
+            $("#input-placeholder").on("click", displaySearch)
+            $("#search-button").on("click", displaySearch)
 
             let scrolled = 0
             var maxScrollLeft = $("#search-tabs-container")[0].scrollWidth - $("#search-tabs-container")[0].clientWidth;
 
             $(".btn-scroll-left").on("click", function () {
-                scrolled = scrolled - 168;
+                var itemWidth = $('.search-tab')[0].clientWidth;
+                scrolled = scrolled - itemWidth;
                 if (scrolled < 0) scrolled = 0;
 
                 $("#search-tabs-container").animate({
@@ -801,7 +923,8 @@
             });
 
             $(".btn-scroll-right").on("click", function () {
-                scrolled = scrolled + 168;
+                var itemWidth = $('.search-tab')[0].clientWidth;
+                scrolled = scrolled + itemWidth;
                 if (scrolled > maxScrollLeft) scrolled = maxScrollLeft
 
                 $("#search-tabs-container").animate({
