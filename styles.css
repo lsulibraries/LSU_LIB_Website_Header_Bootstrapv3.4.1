@@ -605,19 +605,16 @@ button.nav-footer-btn i {
   line-height: 1rem;
 }
 
-.tooltip .tooltip-arrow {
-  border-bottom-color: white !important;
-}
-
 .tooltip .tooltip-inner {
-  background-color: white;
+  background-color: black;
   border-radius: 12px;
   max-width: 100% !important;
+  opacity: 0.9;
 }
 
 .tab-form-detail {
-  padding: 28px 60px;
-  color: black;
+  padding: 28px;
+  color: white;
 }
 
 .tab-detail-icon {
@@ -628,7 +625,7 @@ button.nav-footer-btn i {
 
 .tab-detail-body {
   text-align: left;
-  max-width: 200px;
+  width: 200px;
 }
 
 .tab-detail-title {
