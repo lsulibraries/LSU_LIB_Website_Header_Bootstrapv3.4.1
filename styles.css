@@ -100,13 +100,25 @@
   text-transform: uppercase;
   letter-spacing: 0.25rem;
   border-radius: 8px;
-  border: 2px solid var(--gray);
+  border: 2px solid var(--light-gray);
   margin-top: 5.625rem;
   margin-bottom: 5rem;
+  display: inline-flex;
 }
 
-#custom-footer #ask-us-btn i {
-  color: var(--lsu-gold) !important;
+#custom-footer #ask-us-btn .icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  width: 2.5rem;
+  margin-left: 12px;
+}
+
+#custom-footer #ask-us-btn .fa-secondary {
+  fill: var(--lsu-gold) !important;
+}
+
+#custom-footer #ask-us-btn .fa-primary {
+  fill: var(--lighter-gray) !important;
 }
 
 #footer-logo {
@@ -115,6 +127,12 @@
 
 #custom-footer a {
   color: var(--light-gray);
+}
+
+@media (max-width: 1199px) {
+  #custom-footer .footer-section {
+    width: 240px;
+  }
 }
 
 /* Header styles */
@@ -294,8 +312,27 @@ button.nav-footer-btn i {
   }
 }
 
+#ask-us {
+  display: inline-flex;
+}
+
 #ask-us .title {
-  margin-right: 4px;
+  font-size: 0.75rem;
+  margin-right: 8px;
+}
+
+#ask-us .icon-wrapper {
+  width: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+#ask-us .icon-wrapper .fa-primary {
+  fill: var(--lsu-purple);
+}
+
+#ask-us .icon-wrapper .fa-secondary {
+  fill: var(--lsu-gold);
 }
 
 @media (max-width: 1199px) {
@@ -660,15 +697,50 @@ button.nav-footer-btn i {
   transform: scaleY(0);
 }
 
+#shortcut-bar a {
+  display: flex;
+  align-items: center;
+}
+
+
+@media (max-width: 1199px) {
+  #shortcut-bar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 #shortcut-bar a:hover {
   border-top: 1px solid var(--lsu-gold);
 }
 
 #shortcut-bar .short-label,
-#shortcut-bar .long-label,
-#shortcut-bar i {
+#shortcut-bar .long-label {
   color: var(--lighter-gray) !important;
   letter-spacing: 0.1875rem;
+}
+
+
+#shortcut-bar .icon-wrapper {
+  display: flex;
+  align-items: center;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 8px;
+}
+
+@media (max-width: 1199px) {
+  #shortcut-bar .icon-wrapper {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0;
+    margin-bottom: 4px;
+  }
+}
+
+#shortcut-bar svg {
+  fill: var(--lighter-gray)
 }
 
 .scroll-none #shortcut-bar {
@@ -931,6 +1003,18 @@ aside .dropdown-item a {
 
 .w-100 {
   width: 100%;
+}
+
+@media (max-width: 1199px) {
+  .md-w-100 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .sm-w-100 {
+    width: 100%;
+  }
 }
 
 .h-100 {
