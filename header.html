@@ -627,8 +627,8 @@
                         <i class="fas fa-search"></i>
                     </button>
                     <button id="ask-us" class="nav-footer-btn text-uppercase border-none d-flex align-items-center"
-                        type="button">
-                        <a href="https://askus.lib.lsu.edu/"><span class="title">Ask Us</span></a>
+                        type="button" data-toggle="modal" data-target="#ask-us-modal">
+                        <span class="title">Ask Us</span>
                         <div class="icon-wrapper">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                                 <path
@@ -821,12 +821,70 @@
             </ul>
     </aside>
 
+    <!-- Ask Us Modal -->
+    <div class="modal fade" id="ask-us-modal" tabindex="-1" role="dialog" aria-labelledby="modal-label">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <span class="title" id="modal-label">Ask Us</span>
+                        <div class="icon-wrapper">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                <path
+                                    d="M352 287.9H162.3L79.5 350a9.7 9.7 0 0 1-15.5-7.8V288a64.06 64.06 0 0 1-64-64V64A64.06 64.06 0 0 1 64 0h288a64.06 64.06 0 0 1 64 64v160a63.91 63.91 0 0 1-64 63.9z"
+                                    class="fa-secondary"></path>
+                                <path
+                                    d="M576 224v160a64.06 64.06 0 0 1-64 64h-32v54.3a9.7 9.7 0 0 1-15.5 7.8L381.7 448H256a64.06 64.06 0 0 1-64-64v-64h160a96.15 96.15 0 0 0 96-96v-64h64a64.06 64.06 0 0 1 64 64z"
+                                    class="fa-primary"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-body">
+                    <div id="s-la-widget-18159"></div>
+                    <hr>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item active" role="presentation">
+                            <a href="#live-chat" aria-controls="live-chat" role="tab" data-toggle="tab">Live
+                                Chat</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#general" aria-controls="general" role="tab" data-toggle="tab">Email Main
+                                Library</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a href="#sc-ask" aria-controls="sc-ask" role="tab" data-toggle="tab">Email Special
+                                Collections</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="live-chat">
+                            <div id="libchat_35966f12fa5ed5e1c272cab54492c01b6f3e06334adf62c529976c1fd873dd5f"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="general">
+                            <div id="s-la-widget-19448"></div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="sc-ask">
+                            <div id="s-la-widget-19447"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <div id="main-content"></div>
 
     <footer id="custom-footer">
         <div class="mx-5">
             <div class="d-flex justify-content-center">
-                <button id="ask-us-btn" type="button">Ask Us
+                <button id="ask-us-btn" type="button" data-toggle="modal" data-target="#ask-us-modal">Ask Us
                     <div class="icon-wrapper">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
                             <path
@@ -876,8 +934,11 @@
                         <p><a href="http://visitor.r20.constantcontact.com/d.jsp?llr=5bhazgoab&p=oi&m=1114771561534">Sign
                                 up
                                 for our newsletter</a></p>
-                        <p><a href="#">Website feedback</a></p>
-                        <p><a href="https://lsu.edu/accessibility/">Accessibility statement</a></p>
+                        <p><a data-toggle="modal" data-target="#ask-us-modal" class="cursor-pointer"
+                                data-target-tab="general" data-target-select="val7_19448"
+                                data-target-select-value="17">Website
+                                feedback</a></p>
+                        <p><a href=" https://lsu.edu/accessibility/">Accessibility statement</a></p>
                         <p><a href="https://lsu.edu/privacy/">Privacy statement</a></p>
                         <p><a href="https://digitalcommons.lsu.edu/cwbr/">Civil War Book Review</a></p>
                     </div>
@@ -910,6 +971,15 @@
         src="https://lsu.libcal.com/api_hours_today.php?iid=1486&lid=241&format=js&systemTime=0&context=object"></script>
     <script
         src="https://lsu.libcal.com/api_hours_today.php?iid=1486&lid=236&format=js&systemTime=0&context=object"></script>
+    <!-- Library hours -->
+
+    <!-- Ask Us widget -->
+    <script src="https://askus.lib.lsu.edu/1.0/widgets/18159"></script>
+    <script
+        src="https://askus.lib.lsu.edu/load_chat.php?hash=35966f12fa5ed5e1c272cab54492c01b6f3e06334adf62c529976c1fd873dd5f"></script>
+    <script src="https://askus.lib.lsu.edu/1.0/widgets/19448"></script>
+    <script src="https://askus.lib.lsu.edu/1.0/widgets/19447"></script>
+    <!-- Ask Us widget -->
 
     <!-- Remove jquery before updating springshare -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"
@@ -987,6 +1057,14 @@
                     scrollLeft: scrolled
                 }, 200);
             });
+
+            $('#ask-us-modal').on('shown.bs.modal', function (event) {
+                const tab = $(event.relatedTarget).data("target-tab")
+                const select = $(event.relatedTarget).data("target-select")
+                const value = $(event.relatedTarget).data("target-select-value")
+                $(event.target).find(`a[href="#${tab}"]`).click()
+                $(event.target).find(`select[id="${select}"]`).val(value);
+            })
 
         });
     </script>

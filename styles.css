@@ -18,6 +18,10 @@
   font-size: 16px;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .gold {
   color: var(--lsu-gold)
 }
@@ -327,11 +331,26 @@ button.nav-footer-btn i {
   align-items: center;
 }
 
-#ask-us .icon-wrapper .fa-primary {
+#ask-us-modal .title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+#ask-us-modal .icon-wrapper {
+  width: 3rem;
+  display: inline-flex;
+  align-items: center;
+}
+
+#ask-us .icon-wrapper .fa-primary,
+#ask-us-modal .icon-wrapper .fa-primary {
   fill: var(--lsu-purple);
 }
 
-#ask-us .icon-wrapper .fa-secondary {
+#ask-us .icon-wrapper .fa-secondary,
+#ask-us-modal .icon-wrapper .fa-secondary {
   fill: var(--lsu-gold);
 }
 
@@ -339,6 +358,22 @@ button.nav-footer-btn i {
   #ask-us .title {
     display: none;
   }
+}
+
+.modal-content {
+  border-radius: 14px
+}
+
+.modal-header {
+  height: 112px;
+}
+
+.modal-body {
+  padding: 2rem 3rem
+}
+
+.s-la-widget {
+  margin-top: 16px
 }
 
 #search-button {
